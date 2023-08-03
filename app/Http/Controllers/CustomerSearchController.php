@@ -9,12 +9,7 @@ use Illuminate\Http\Request;
 
 class CustomerSearchController extends Controller
 {
-    protected $myApplicationService;
-
-    public function __construct()
-    {
-        $this->myApplicationService = app()->make('App\MyServices\MyApplicationService');
-    }
+    
 
     /**
      * 顧客を検索して表示する
