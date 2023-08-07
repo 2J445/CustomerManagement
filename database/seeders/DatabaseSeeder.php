@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Shop;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,5 +21,17 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        \App\Models\Shop::factory()->create([
+            'id'=>1,
+            'name'=>'東京本店',
+        ]);
+        \App\Models\Shop::factory()->create([
+            'id'=>2,
+            'name'=>'名古屋支店',
+        ]);
+        \App\Models\Shop::factory()->create([
+            'id'=>3,
+            'name'=>'大阪支店',
+        ]);
     }
 }
