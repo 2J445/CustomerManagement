@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 Route::get('newpage',[\App\Http\Controllers\NewPageController::class, 'newpage']);
 Route::get('/shops', [\App\Http\Controllers\ShopListController::class, 'index']);
